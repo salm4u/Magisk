@@ -1,57 +1,57 @@
-# Magisk Changelog
+# ماجيسك تغيير السجل.
 
-### v30.6 (2025.12.1)
+### V30.6 (2025.12.1)
 
-- [MagiskInit] Revert a change that could result in bootloops
+- [ماجيك إنيت]  ارجع إلى تغيير قد يؤدي إلى التمهيد.
 
-### v30.5 (2025.12.1)
+### V30.5 (2025.12.1)
 
-- [General] Improve commandline argument parsing logic
-- [resetprop] Properly support Android versions with property overrides
+- [عام.]  تحسين حجة سطر القيادة تحليل المنطق.
+- [إعادة الضبط]  دعم إصدارات Android بشكل صحيح مع تجاوزات العقارات
 
-### v30.4 (2025.10.2)
+### V30.4 (2025.10.2)
 
-- [MagiskSU] Fix several implementation bugs
+- [MagiskSU] إصلاح العديد من أخطاء التنفيذ.
 
-### v30.3 (2025.9.29)
+### V30.3 (2025.9.29)
 
-- [General] Support installing Magisk into vendor_boot partition
-- [MagiskPolicy] Support new sepolicy binary format introduced in Android 16 QPR2
-- [Core] Migrate much more code into Rust
-- [MagiskSU] Fallback to older implementation when the kernel doesn't support zero userspace copy APIs
+- [عام.] دعم تثبيت Magisk في قسم vendor_boot
+- [السياسة السحرية]  دعم تنسيق ثنائي جديد للسياسات تم تقديمه في Android 16 QPR2
+- [الأساسية.]  هجر المزيد من التعليمات البرمجية إلى الصدأ
+- [MagiskSU] ارجع إلى التنفيذ القديم عندما لا تدعم النواة واجهات برمجة تطبيقات نسخ مساحة المستخدم صفرًا
 
-### v30.2 (2025.8.6)
+### V30.2 (2025.8.6)
 
-- [Core] Fix an edge case breaking modules when overlayfs is involved
-- [Core] Fix module `.replace` functionality in certain situations
-- [resetprop] Reduce property modification traces
+- [الأساسية.]  إصلاح وحدات كسر حالة الحافة عند مشاركة التراكبات.
+- [الأساسية.]   إصلاح وحدة. '.replace` وظائف في حالات معينة. 
+- [إعادة الضبط]  تقليل آثار تعديل الممتلكات.
 
-### v30.1 (2025.7.3)
+### V30.1 (2025.7.3)
 
-- [Core] Fix bug in module mounting implementation
-- [MagiskSU] Add ability to restrict Linux capabilities even if running as root (uid=0)
+- [الأساسية.]   إصلاح الخلل في وحدة تركيب التنفيذ. 
+- [MagiskSU]  إضافة القدرة على تقييد قدرات Linux حتى لو كان يعمل كجذر (uid = 0)
 
-### v30.0 (2025.7.1)
+### V30.0 (2025.7.1)
 
-- [General] Various minor bug fixes
-- [Core] Migrate module implementation to Rust
-- [Core] Improve Magisk specific files injection logic
-- [MagiskBoot] Migrate compression code to Rust
+- [عام.]  إصلاحات الخلل طفيفة مختلفة.
+- [الأساسية.]  تنفيذ وحدة الهجرة إلى الصدأ
+- [الأساسية.]  تحسين ماجيسك ملفات محددة حقن المنطق
+- [ماجيكبوت]  تهجر رمز الضغط إلى الصدأ
 
-### v29.0 (2025.5.14)
+### V29.0 (2025.5.14)
 
-- [General] Massive internal refactoring and code migration
-- [App] Support downloading module zip files with XZ compression
-- [App] Disable app animations when system animations are disabled
-- [Core] Support systemlessly deleting files with modules using blank file nodes
-- [MagiskInit] Redesign sepolicy patching and injection logic
-- [MagiskSU] Better TTY/PTY support
+- [عام.] إعادة هيكلة داخلية ضخمة وهجرة رمزية.
+- [App] دعم تنزيل ملفات مضغوطة للوحدة مع ضغط XZ
+- [التطبيق.] تعطيل الرسوم المتحركة للتطبيق عند تعطيل الرسوم المتحركة للنظام.
+- [الأساسية.] دعم حذف الملفات بدون نظام باستخدام وحدات باستخدام عقد الملفات الفارغة.
+- [ماجيك إنيت] إعادة تصميم ترقيع السياسة ومنطق الحقن.
+- [MagiskSU] دعم أفضل TTY / PTY
 
-### v28.1 (2024.12.6)
+### V28.1 (2024.12.6)
 
-- [App] Fix stub APK download link
-- [App] Fix support for Android lower than 8.0
-- [General] Fix support for MTK Samsung devices
+- [التطبيق.] إصلاح كعب APK رابط التنزيل
+- [التطبيق.] إصلاح دعم Android أقل من 8.0
+- [عام.] إصلاح دعم أجهزة MTK Samsung
 - [MagiskInit] Fix a regression for 2SI devices
 - [MagiskPolicy] Fix a regression causing `overlay.d` replaced files to be not accessible
 
